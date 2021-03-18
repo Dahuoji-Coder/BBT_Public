@@ -9,3 +9,7 @@
 <br/>
 <img src="https://github.com/Dahuoji-Coder/BBT/blob/main/Screenshot_BBT_Result.jpg" width="500" />
 <br/>
+应用下载体验：
+<br/>
+<a href="https://github.com/Dahuoji-Coder/BBT_Public/raw/master/BasalBodyTemperature/app/release/app-release.apk" target="_blank">Download BBT_v1.0</a>
+<br/>
