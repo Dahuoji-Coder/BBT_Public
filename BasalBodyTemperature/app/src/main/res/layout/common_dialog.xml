@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/white_round_back">
+
+    <cn.dahuoji.body_temperature.skinview.TTFTextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/pool_text_color_hard"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <cn.dahuoji.body_temperature.skinview.TTFTextView
+        android:id="@+id/contentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:gravity="left"
+        android:text="内容"
+        android:textColor="@color/pool_text_color_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/long_button_back_gray_selector"
+            android:gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="退出"
+            android:textColor="@color/text_color_white"
+            android:textSize="15sp" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            android:id="@+id/btnSure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/long_button_back_orange_selector"
+            android:gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="同意"
+            android:textColor="@color/text_color_white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

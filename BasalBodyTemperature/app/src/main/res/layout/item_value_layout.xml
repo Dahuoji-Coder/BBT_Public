@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <cn.dahuoji.body_temperature.skinview.TTFTextView
+        android:id="@+id/valueText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/item_value_back"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="12dp"
+        android:text="35.0"
+        android:textColor="@color/pool_text_color_select"
+        android:textSize="15sp" />
+
+</RelativeLayout>

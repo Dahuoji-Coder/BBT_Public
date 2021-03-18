@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <cn.dahuoji.body_temperature.skinview.TTFTextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="2021年03月"
+        android:textColor="@color/pool_text_color_hard"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <cn.dahuoji.body_temperature.skinview.SkinLinearLayout
+        android:id="@+id/weekTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="日"
+            android:textColor="@color/pool_text_color_light" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="一"
+            android:textColor="@color/pool_text_color_light" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="二"
+            android:textColor="@color/pool_text_color_light" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="三"
+            android:textColor="@color/pool_text_color_light" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="四"
+            android:textColor="@color/pool_text_color_light" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="五"
+            android:textColor="@color/pool_text_color_light" />
+
+        <cn.dahuoji.body_temperature.skinview.TTFTextView
+            style="@style/week_day_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="六"
+            android:textColor="@color/pool_text_color_light" />
+
+    </cn.dahuoji.body_temperature.skinview.SkinLinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/weekTitleLayout" />
+
+    <cn.dahuoji.body_temperature.skinview.TTFTextView
+        android:id="@+id/btnQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/long_button_back_orange_selector"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="生成图片"
+        android:textColor="@color/text_color_white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <cn.dahuoji.body_temperature.skinview.TTFTextView
+        android:id="@+id/btnExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnQuery"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/long_button_back_gray_selector"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="导出数据"
+        android:textColor="@color/text_color_white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>
