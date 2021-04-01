@@ -69,7 +69,7 @@ public class PrintActivity extends BaseActivity implements View.OnClickListener 
             }
         } else {
             //选择的日期不在同一个月
-            int monthLastDay = DateUtil.getMonthLastDay(startDayEntity.getYear(), endDayEntity.getMonth());
+            int monthLastDay = DateUtil.getMonthLastDay(startDayEntity.getYear(), startDayEntity.getMonth());
             for (int i = startDayEntity.getDay(); i <= monthLastDay; i++) {
                 boolean hasValue = false;
                 for (int j = 0; j < recordList.size(); j++) {
