@@ -20,7 +20,3 @@
 <br/>
 <img src="https://github.com/Dahuoji-Coder/BBT_Public/blob/master/BBT_v1.0_Download_Code.png" width="200" />
 <br/>
-<br/>
-欢迎打赏（1毛也不嫌少 哈哈哈）
-<br/>
-<img src="https://github.com/Dahuoji-Coder/BBT_Public/blob/master/money_weixin.jpg" width="200" />
